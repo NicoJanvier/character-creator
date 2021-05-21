@@ -44,3 +44,36 @@
 .controlColumn {
   width: 50%;
 }
+
+@media screen and (max-width: 768px) {
+  .characterEditor {
+    padding-top: 64px;
+  }
+  .header {
+    width: 100%;
+    padding-bottom: 32px;
+  }
+  .characterWrapper {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    min-height: unset;
+    top: initial;
+    right: initial;
+  }
+  .controlColumn {
+    position: fixed;
+    bottom: 64px;
+    width: 100%;
+    display: flex;
+    z-index: 1;
+    overflow-x: scroll;
+    margin-left: -32px;
+  }
+  .controlColumn > div {
+    margin-left: 32px;
+    margin-bottom: 0;
+    max-width: calc(100% - 64px);
+  }
+}
